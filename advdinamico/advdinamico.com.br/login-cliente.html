@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<!-- Mirrored from advdinamico.com.br/login-cliente by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2026 14:23:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <title>Login para Clientes - Consulta de Processos Judiciais | Adv Dinâmico</title>
+    <meta name="description" content="Faça login para acessar suas consultas de processos judiciais online.">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="canonical" href="login-cliente.html" />
+
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"  media="print" onload="this.media='all';" />
+    <script defer src="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+
+
+    <!-- Load fonts with font-display swap -->
+    
+
+    <!-- Defer non-critical CSS with font-display optimization -->
+    <link href="../cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min05e8.css?display=swap" rel="stylesheet" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" media="print" onload="this.media='all';">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min05e8.css?display=swap" rel="stylesheet" media="print" onload="this.media='all';">
+
+    
+    <link rel="stylesheet" href="css/pages/guest2.min7839.css?v=1.2">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCDYYLZHE1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-JCDYYLZHE1');
+    </script>
+    
+
+    <!-- Meta Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        '../connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '943040998101290');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=943040998101290&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5276964,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+        <style>
+  :root {
+    --primary-color: #1e40af;
+    --primary-light: #3b82f6;
+    --primary-dark: #1e3a8a;
+    --secondary-color: #0ea5e9;
+    --accent-color: #f97316;
+    --light-color: #f1f5f9;
+    --dark-color: #0f172a;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --radius-sm: 4px;
+    --radius: 8px;
+    --radius-md: 12px;
+    --transition: all 0.3s ease;
+  }
+  
+  .login-page-container {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 520px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .login-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .login-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  }
+  
+  .login-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .login-body {
+    padding: 35px;
+  }
+  
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 8px;
+  }
+  
+  .step-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    transition: var(--transition);
+  }
+  
+  .step-dot.active {
+    width: 25px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+  }
+  
+  .form-label-custom {
+    font-weight: 600;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .form-control-custom {
+    border: 1px solid #e2e8f0;
+    padding: 12px 15px;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .form-control-custom:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    outline: none;
+  }
+  
+  .btn-primary-custom {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border: none;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .btn-primary-custom::after {
+    content: '→';
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary-custom:hover::after {
+    transform: translateX(3px);
+  }
+  
+  .btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  }
+  
+  .btn-primary-custom:active {
+    transform: translateY(0);
+  }
+  
+  .login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .login-divider::before,
+  .login-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .login-divider span {
+    padding: 0 10px;
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+  
+  .login-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: var(--primary-light);
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .back-button:hover {
+    color: var(--primary-dark);
+    transform: translateX(-3px);
+  }
+  
+  .back-button i {
+    font-size: 0.9rem;
+  }
+  
+  .error-text {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+  
+  .btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s ease infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .btn-primary-custom.btn-loading::after {
+    content: '';
+    font-size: 0;
+  }
+  
+  .login-help-text {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .login-help-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .login-help-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+  
+  .login-footer {
+    background-color: #f8fafc;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .login-footer-text {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  
+  .login-features {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .login-feature {
+    text-align: center;
+    flex: 1;
+    max-width: 150px;
+  }
+  
+  .login-feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+  }
+  
+  .login-feature-title {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+  }
+  
+  .login-feature-text {
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.4;
+  }
+</style>
+    
+<!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+
+<body>
+            <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="consultar-processo.html">
+                    <img src="images/logo2.png" height="49" alt="Logo" class="d-inline-block align-top">
+                </a>
+            <!-- Dropdown Menu -->
+            <div class="d-flex align-items-center">
+                                    <div class="dropdown me-2">
+                       <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="bi bi-grid-3x3-gap me-2"></i> Menu
+                       </button>
+                       <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="dropdownMenuButton">
+                           <li><a class="dropdown-item" href="consultar-processo.html">Consultar Processos</a></li>
+                           <li><a class="dropdown-item" href="consultar-empresa.html">Buscar Empresa</a></li>
+                           <li><a class="dropdown-item" target="_blank" href="https://advdinamico.zendesk.com/hc/pt-br">Contato</a></li>
+                       </ul>
+                    </div>
+                                                
+                                    <a href="login-cliente.html" class="btn btn-custom-primary">
+                        <i class="bi bi-box-arrow-in-right me-2"></i> Entrar
+                    </a>
+                            </div>
+        </nav>
+    
+    <div id="wrap">
+        <div id="contents">
+            <div wire:snapshot="{&quot;data&quot;:{&quot;step&quot;:&quot;email&quot;,&quot;email&quot;:null,&quot;name&quot;:null,&quot;password&quot;:null,&quot;document_type&quot;:&quot;CPF&quot;,&quot;document_value&quot;:null,&quot;birthdate&quot;:null,&quot;redirectUrl&quot;:&quot;\/processo\/painel&quot;,&quot;tempUserId&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;xQif4mi7xU48rgTSNAB4&quot;,&quot;name&quot;:&quot;customer.login&quot;,&quot;path&quot;:&quot;login-cliente&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;pt_BR&quot;},&quot;checksum&quot;:&quot;cb4d906405bbbadd5b8b0e914d556104070a835b2aa755a17e8e19162bbe99ea&quot;}" wire:effects="[]" wire:id="xQif4mi7xU48rgTSNAB4" class="login-page-container">
+  <div class="login-card">
+    <div class="login-header">
+      <h1 class="login-title">
+        Acesse Processos Judiciais
+      </h1>
+      <p class="login-subtitle">
+        Faça login para acessar suas consultas e histórico de processos
+      </p>
+    </div>
+    <div class="login-body">
+      <div class="step-indicator">
+        <div class="step-dot active"></div>
+        <div class="step-dot "></div>
+        <div class="step-dot "></div>
+      </div>
+      
+              <form method="POST" wire:submit.prevent="nextStepPassword">
+          <div class="mb-4">
+            <label for="email" class="form-label form-label-custom">
+              <i class="fas fa-envelope login-icon"></i> Seu e-mail
+            </label>
+            <input type="email" id="email" wire:model='email' class="form-control form-control-custom" autocomplete placeholder="Digite seu e-mail para continuar">
+                      </div>
+          <button type="submit" class="btn btn-primary w-100 btn-primary-custom" 
+                  wire:loading.class="btn-loading"
+                  wire:target="nextStepPassword">
+            <span wire:loading.remove wire:target="nextStepPassword">Continuar</span>
+            <span wire:loading wire:target="nextStepPassword">Verificando...</span>
+          </button>
+          
+          <div class="login-divider">
+            <span>Acesso seguro</span>
+          </div>
+          
+          <p class="login-help-text">
+            Nunca compartilhamos seus dados com terceiros.
+            <br>Sua privacidade é importante para nós.
+          </p>
+          
+          <div class="login-features">
+            <div class="login-feature">
+              <div class="login-feature-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="login-feature-title">Dados seguros</div>
+              <div class="login-feature-text">Suas informações são criptografadas</div>
+            </div>
+            <div class="login-feature">
+              <div class="login-feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="login-feature-title">Rápido e fácil</div>
+              <div class="login-feature-text">Consultas em segundos</div>
+            </div>
+            <div class="login-feature">
+              <div class="login-feature-icon">
+                <i class="fas fa-history"></i>
+              </div>
+              <div class="login-feature-title">Histórico</div>
+              <div class="login-feature-text">Acompanhe suas consultas</div>
+            </div>
+          </div>
+        </form>
+        
+          </div>
+  </div>
+</div>
+        </div>
+
+        <style>
+    #footer{
+        background-color: #000000!important;
+        padding-top: 10px;
+        color: rgb(209, 209, 209);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: auto;
+    }
+        
+            .footer-divider {
+                border-color: #d1d5db;
+                margin: 10px 0;
+            }
+        
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                padding-top: 5px;
+            }
+        
+            .social-link {
+                color: #c8c8c8;
+                font-size: 25px;
+                transition: color 0.3s ease, transform 0.2s;
+            }
+        
+            .social-link:hover {
+                color: #008080; /* Cor em destaque no hover */
+                transform: scale(1.1);
+            }
+        
+            .footer-link {
+                color: #b7b7b7;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        
+            .footer-link:hover {
+                text-decoration: underline;
+            }
+        
+            .footer-text {
+                color: #b7b7b7;
+                font-size: 0.875rem;
+                margin: 0;
+            }
+        
+            .footer-text p {
+                margin: 0;
+            }
+
+            html, body {
+                height: 100%;
+            }
+
+            #wrap {
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+            }
+
+            #contents {
+                flex: 1;
+            }
+</style>
+<footer id="footer" class="text-center text-lg-start">                          
+    
+    <div class="text-center">
+            <div class="container">
+                <!-- <hr class="footer-divider"> -->
+                <div class="social-icons mb-2">
+                    <a target="_blank" href="https://www.instagram.com/advdinamico/" aria-label="Instagram Adv Dinâmico" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/people/Adv-Dinâmico/61568842657866/" aria-label="Facebook Adv Dinâmico" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                
+                                
+                <div class="text-center p-4 footer-text">
+                    © 2015 - 2026 Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+</footer>    </div>
+
+        <script defer src="../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        document.addEventListener('livewire:initialized', () => {
+            Livewire.on('fbq-track', ({ event_name, params, eventID }) => {
+                fbq('track', event_name, params || {}, eventID ? { eventID } : {});
+            });
+
+            Livewire.on('notify', ({ message, type }) => {
+            switch(type) {
+                case 'info':
+                        iziToast.info({
+                            message: message,
+                        });
+                    break;
+                case 'warning':
+                        iziToast.warning({
+                            message: message,
+                        });
+                    break;
+                case 'error':
+                        iziToast.error({
+                            message: message,
+                        });
+                    break;
+                case 'success':
+                        iziToast.success({
+                            message: message,
+                        });
+                    break;
+                default:
+                    console.error("Tipo de notificação desconhecido:", type);
+            }
+            });
+
+        });
+    </script>
+    <script>
+        function phoneNumber(input) {
+            if(input.replace(/\D/g,'').length <= 10) {
+                return '(99) 9999-9999';
+            }
+
+            return '(99) 99999-9999';
+        }
+    </script>
+    
+<script src="livewire/livewire.min71b4.js?id=61e33937"   data-csrf="20Ir5lrL2czWBjNWKuWHc56COmSUN7vnJHec5Gin" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"c4d36dc2fd4f4c57a2081a0e6de00151","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from advdinamico.com.br/login-cliente by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2026 14:23:07 GMT -->
+</html>

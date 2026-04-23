@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<!-- Mirrored from advdinamico.com.br/cadastro-advogado by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2026 14:37:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Cadastro para Advogados - Receba Casos e Conecte-se com Clientes Agora | Adv Dinâmico</title>
+    <meta name="description" content="Cadastre-se e tenha acesso diário a novos casos jurídicos. Economize tempo, reduza custos com prospecção de clientes e conecte-se diretamente via WhatsApp, amplie sua atuação e resultados!">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="canonical" href="cadastro-advogado.html" />
+
+    
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link href="../cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" media="print" onload="this.media='all';">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all';">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        html,
+        body,
+        #contents {
+            height: 100%;
+            width: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            background-color: #f3f4f6;
+            padding-bottom: 40px;
+        }
+        .btn-next-step{
+        width: 100%; 
+        max-width: 300px;
+    }
+
+    #wrap {
+        min-height: 100%;
+    }
+    
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #1f2937;
+        --bs-btn-border-color: #1f2937;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #374151;
+        --bs-btn-hover-border-color: #374151;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #1f2937;
+        --bs-btn-active-border-color: #1f2937;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #565b64;
+        --bs-btn-disabled-border-color: #565b64;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.2s;
+    }
+    .btn-outline-primary {
+	    --bs-btn-color: #1f2937;
+	    --bs-btn-border-color: #1f2937;
+	    --bs-btn-hover-color: #fff;
+	    --bs-btn-hover-bg: #1f2937;
+	    --bs-btn-hover-border-color: #1f2937;
+	    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+	    --bs-btn-active-color: #fff;
+	    --bs-btn-active-bg: #1f2937;
+	    --bs-btn-active-border-color: #1f2937;
+	    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	    --bs-btn-disabled-color: #1f2937;
+	    --bs-btn-disabled-bg: transparent;
+	    --bs-btn-disabled-border-color: #1f2937;
+	    --bs-gradient: none;
+	}
+
+    .btn-primary {
+        background-color: #008080!important;
+        border-color: #008080!important;
+    }
+
+    .btn-primary:hover {
+        background-color: #006767!important;
+        border-color: #006767!important;
+    }
+    
+    .form-check-input[type=checkbox] {
+        border-color: #1f2937;
+    }
+
+    .form-check-input:checked[type=checkbox]{
+        background-color: #1f2937;
+        border-color: #1f2937;
+    }
+
+    .form-check-input:focus[type=checkbox] {
+        box-shadow: 0 0 0 .25rem #1f293747
+    }
+
+    .selectable-option {
+        cursor: pointer;
+    }
+
+    .selectable-option:hover {
+        color: white;
+        background: var(--bs-primary);
+    }
+
+    .nav-pills {
+        --bs-nav-pills-link-active-bg: #1f2937;
+    }
+
+    .nav {
+        --bs-nav-link-color: #1f2937;
+        --bs-nav-link-hover-color: #080c10;
+    }
+
+    .form-control:focus {
+        border-color: #5b5b5b;
+        box-shadow: 0 0 0 0.15rem rgb(108 108 108 / 25%);
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+   
+        * {
+				padding: 0;
+				margin: 0;
+			}
+
+			:root {
+				--bs-primary: #1f2937;
+				--bs-primary-rgb: 31, 41, 55;
+			}
+            ::-webkit-scrollbar {
+                background-color: transparent;
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 8px;
+                border: 2px solid transparent;
+                background-clip: content-box;
+                background-color: #ddd;
+            }
+
+			.navbar {
+				height: var(--nav-bar-height);
+				user-select: none;
+			}
+
+			.navbar {
+				background-color: #fff;
+				--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+				box-shadow: 0 0 #0000, 0 0 #0000,var(--tw-shadow);
+			}
+
+            .user-avatar {
+                border-radius: 50%; /* Torna a imagem redonda */
+                width: 32px; /* Largura da imagem */
+                height: 32px; /* Altura da imagem */
+                object-fit: cover; /* Garante que a imagem cubra o espaço */
+                margin-right: 10px; /* Espaçamento à direita */
+            }
+            .dropdown-menu {
+                border: 1px solid #ddd;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                background-color: white;
+            }       
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCDYYLZHE1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-JCDYYLZHE1');
+    </script>
+    
+
+            <!-- Meta Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        '../connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '943040998101290');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=943040998101290&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+
+    
+
+    
+    <meta name="description" content="Capte clientes todos os dias! Cadastre-se na plataforma que conecta advogados a pessoas reais em busca de atendimento jurídico. Receba oportunidades alinhadas ao seu perfil e aumente sua carteira de clientes.">
+<style>
+    body {
+        background-color: #f3f4f6;
+        font-family: 'Figtree', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-section {
+        background: linear-gradient(90deg, #008080 0%, #1f2937 100%);
+        color: #fff;
+        padding: 60px 0 0px 0;
+        text-align: center;
+    }
+    @media (max-width: 900px) {
+        .hero-flex { flex-direction: column; gap: 24px; }
+        .hero-text { text-align: center !important; }
+    }
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+    .hero-subtitle {
+        font-size: 1.15rem;
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
+    .hero-image {
+        background-image: url('img/legal_cases_phone.png');
+        background-size: cover;
+        background-position: top;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        min-height: 400px;
+        max-width: 300px;
+        width: 100%;
+    }
+    .hero-cta {
+        background: #fff;
+        color: #008080;
+        font-weight: 600;
+        padding: 15px 40px;
+        border-radius: 0.375rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        border: 1px solid #fff;
+    }
+    .hero-cta:hover {
+        background: #008080;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .hero-cta-secondary {
+        background: #008080;
+        color: #fff;
+        font-weight: 600;
+        padding: 15px 40px;
+        border-radius: 0.375rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        border: 1px solid #fff;
+    }
+    .hero-cta-secondary:hover {
+        background: #fff;
+        color: #008080;
+        border: 1px solid #fff;
+    }
+
+    .benefits-section {
+        background: #fff;
+        padding: 40px 0 20px 0;
+        text-align: center;
+    }
+    .benefit {
+        max-width: 340px;
+        margin: 0 10px 30px 10px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 18px 12px;
+    }
+    .benefit-icon {
+        font-size: 38px;
+        color: #008080;
+        margin-bottom: 10px;
+    }
+    .benefit-title {
+        font-weight: 600;
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+        color: #1f2937;
+    }
+    .benefit-desc {
+        color: #6b7280;
+        font-size: 1rem;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background: rgba(0,0,0,0.45);
+        align-items: center;
+        justify-content: center;
+    }
+    .modal.active {
+        display: flex;
+    }
+    .modal-content {
+        background: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+        padding: 30px 20px 20px 20px;
+        max-width: 420px;
+        width: 95vw;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    .close-modal {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        font-size: 1.5rem;
+        color: #888;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .input-label {
+        color: #111827;
+        font-weight: 500;
+        margin-bottom: 8px;
+        display: block;
+        font-size: 15px;
+    }
+    .form-control {
+        padding: 11px;
+        font-size: 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.375rem;
+        width: 100%;
+        margin-bottom: 10px;
+        transition: border-color 0.2s;
+    }
+    .form-control:focus {
+        border-color: #1f2937;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(31,41,55,0.13);
+    }
+    .btn {
+        font-weight: 500;
+        width: 100%;
+        padding: 12px;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .btn-primary {
+        color: #ffffff;
+        background-color: #1f2937;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+    .btn-primary:hover {
+        background-color: #374151;
+        transform: translateY(-1px);
+    }
+    .link {
+        color: #313534;
+        text-decoration: none;
+        font-size: 0.875rem;
+    }
+    .link:hover {
+        text-decoration: underline;
+    }
+    a {
+        color: #008080;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .title-section-2 {
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 10px;
+    }
+    .text-muted {
+        color: #6b7280;
+        font-size: 0.95rem;
+    }
+    .faq-section {
+        background: #fff;
+        padding: 35px 0 35px 0;
+        text-align: left;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .faq-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .faq-item {
+        margin-bottom: 18px;
+    }
+    .faq-question {
+        font-weight: 600;
+        color: #008080;
+        margin-bottom: 4px;
+    }
+    .faq-answer {
+        color: #374151;
+        font-size: 1rem;
+    }
+    .footer-section {
+        background: #1f2937;
+        color: #fff;
+        padding: 22px 0 8px 0;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+        .hero-title { font-size: 1.3rem; }
+        .hero-subtitle { font-size: 1rem; padding: 10px; }
+        .benefit { max-width: 100%; }
+        .modal-content { padding: 15px; }
+    }
+    .checked { color: gold; }
+</style>
+<style>
+    .media-image {
+        background-size: contain;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+
+    <!-- Hotjar Tracking Code for CD -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5276964,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    
+  
+<!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+
+<body>
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo2.png" height="49" alt="Logo" class="d-inline-block align-top">
+                    </a>
+                <!-- Dropdown Menu -->
+                <div class="d-flex align-items-center">
+                    
+                    <div class="dropdown me-2">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-list"></i> Menu
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="index.html">Início</a></li>
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="cadastro-advogado.html">Cadastre-se</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://advdinamico.zendesk.com/hc/pt-br">Fale Conosco</a></li>
+                        </ul>
+                    </div>
+                    <a href="cadastro-advogado.html" class="btn btn-primary">Para Advogados</a>
+                </div>
+        </nav>
+        <div id="wrap">
+        <div id="contents">
+            <div wire:snapshot="{&quot;data&quot;:{&quot;name&quot;:null,&quot;email&quot;:null,&quot;password&quot;:null,&quot;password_confirmation&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;9LD9MOvIulZz3s4UhNvf&quot;,&quot;name&quot;:&quot;register&quot;,&quot;path&quot;:&quot;cadastro-advogado&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:{&quot;lw-3184552073-0&quot;:[&quot;div&quot;,&quot;cNFY2y4qrP9ltt30xLzu&quot;]},&quot;scripts&quot;:[&quot;3184552073-0&quot;],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;pt_BR&quot;},&quot;checksum&quot;:&quot;8930a742f3eabaafd060bf07a5724caf6b04f97776aba01ecafc86f9589fbf05&quot;}" wire:effects="{&quot;scripts&quot;:{&quot;3184552073-0&quot;:&quot;&lt;script&gt;\n    $wire.on(&#039;openRegisterModal&#039;, (event) =&gt; {\n        document.getElementById(&#039;registerModal&#039;).classList.add(&#039;active&#039;);\n    });\n&lt;\/script&gt;\n    &quot;}}" wire:id="9LD9MOvIulZz3s4UhNvf">
+    <div wire:snapshot="{&quot;data&quot;:{&quot;showModal&quot;:false,&quot;legalCases&quot;:null,&quot;paginators&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;cNFY2y4qrP9ltt30xLzu&quot;,&quot;name&quot;:&quot;components.modals.legal-cases-list-modal&quot;,&quot;path&quot;:&quot;cadastro-advogado&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;pt_BR&quot;},&quot;checksum&quot;:&quot;c5c15c1ae83323442476d20a731688b2ca9efe7cdab87c2fee9dd711f6125384&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;openLegalCasesListModal&quot;,&quot;closeLegalCasesListModal&quot;]}" wire:id="cNFY2y4qrP9ltt30xLzu">
+    </div>
+    <div class="hero-section">
+        <div class="hero-flex" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
+            <div class="hero-text" style="flex: 1; max-width: 800px; text-align: left;">
+                <h1 class="hero-title">Economize tempo e dinheiro na <br> prospecção de clientes</h1>
+                <p class="hero-subtitle">Aumente sua carteira de clientes com oportunidades reais de pessoas buscando advogados. Nossa IA encontra e conecta você diretamente a quem precisa de atendimento jurídico, sem complicação.</p>
+                <button class="hero-cta" onclick="openModal()">Cadastrar agora</button>
+                <button class="hero-cta-secondary" wire:click="$dispatch('openLegalCasesListModal')" onclick="gtag('event', 'show_clients_advdinamico_lp_button');">Ver clientes</button>
+                <h5 class="fw-bold" style="margin-top: 10px;">+<span id="clients-number">50.000</span> pessoas já buscaram advogados pela nossa plataforma.</h5>
+            </div>
+            <div class="hero-image" style="flex: 1;">
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits-section">
+        <div class="benefit">
+            <div class="benefit-icon"><i class="fa-solid fa-user-plus"></i></div>
+            <div class="benefit-title">Prospecção facilitada por IA</div>
+            <div class="benefit-desc">Nossa IA trabalha diariamente para encontrar clientes de todo o Brasil para você.</div>
+        </div>
+        <div class="benefit">
+            <div class="benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="benefit-title">Contato direto e rápido</div>
+            <div class="benefit-desc">A comunicação é simplificada através do WhatsApp, sem intermediários e sem burocracia.</div>
+        </div>
+        <div class="benefit">
+            <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="benefit-title">Aumente sua renda</div>
+            <div class="benefit-desc">Amplie sua base de clientes e aumente seu faturamento com oportunidades reais todos os dias.</div>
+        </div>
+    </div>
+
+    <div class="info-section" style="background: #fff; padding: 0px 15px;padding-bottom:0px!important;">
+    <div class="container">
+             <div class="row gy-4">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4" style="font-size: 25px; margin-bottom:50px">Parceria</h2>
+                    <div class="row-new justify-content-center gap-4 text-center">
+                        <img src="../correspondentedinamico.com.br/img/parceiros/oab-sp-comissao-jovem-advocacia.png" style="max-width: 200px; height: auto;" loading="lazy"  alt="OAB SP - Comissão Jovem Advocacia"/>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="info-section" style="background: #fff; padding: 50px 15px;" id="na-midia">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-12">
+                <h2 class="text-center mb-4" style="font-size: 25px; margin-bottom:50px">Na Mídia</h2>
+                <div class="row justify-content-center gap-4"> 
+                    <a class="col-5 col-md-2 d-flex justify-content-center" target="_blank" href="https://oglobo.globo.com/patrocinado/dino/noticia/2025/03/21/adv-dinamico-ia-conecta-advogados-e-clientes.ghtml" title="O Globo">
+                        <div class="media-image" style="background-image: url('img/midia/oglobo.jpg'); background-color: #004787;"></div>
+                     </a>
+                     <a class="col-5 col-md-2 d-flex justify-content-center" target="_blank" href="https://www.terra.com.br/noticias/adv-dinamico-ia-conecta-advogados-e-clientes,d8fefbda89659c422f8580e73d03568cwtrbtrnn.html" title="Terra">
+                        <div class="media-image" style="background-image: url('img/midia/terra.jpg'); background-color: #fe8000;"></div>
+                     </a>
+                     <a class="col-5 col-md-2 d-flex justify-content-center" target="_blank" href="https://valor.globo.com/patrocinado/pressworks/noticia/2025/01/09/startup-revoluciona-a-conexao-entre-clientes-e-advogados-com-whatsapp-e-inteligencia-artificial.ghtml" title="Valor Econômico">
+                        <div class="media-image" style="background-image: url('img/midia/valor.jpg'); background-color: #008c8f;"></div>
+                     </a>
+                     <a class="col-5 col-md-2 d-flex justify-content-center" target="_blank" href="https://revistapegn.globo.com/conteudo-de-marca/pressworks/noticia/2025/01/startup-revoluciona-a-conexao-entre-clientes-e-advogados-com-whatsapp-e-inteligencia-artificial.ghtml" title="Revista Pequenas Emmpresas Grandes Negócios">
+                        <div class="media-image" style="background-image: url('img/midia/pegn.jpg'); background-color: #f65411;"></div>
+                     </a>
+                     <a class="col-5 col-md-2 d-flex justify-content-center" target="_blank" href="https://dino.ig.com.br/2025-03-21/adv-dinamico--ia-conecta-advogados-e-clientes.html.amp" title="IG">
+                        <div class="media-image" style="background-image: url('img/midia/ig.jpg'); background-color: #0c8ed6;"></div>
+                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="py-5" style="background-color: #fefefe">
+        <div class="container text-center">
+            <h2 class="title-section-2">Depoimentos de Advogados</h2>
+            <div class="d-flex flex-md-row flex-column overflow-auto justify-content-center">
+                <div class="card m-2" style="max-width: 600px;">
+                    <div class="card-body">
+                        <p class="testimonial-text">"A plataforma facilitou muito a prospecção de clientes para o meu escritório. Todos os dias recebo oportunidades alinhadas ao meu perfil e consigo negociar diretamente com o cliente. Recomendo para todo advogado que quer crescer!"</p>
+                        <div class="stars text-center mb-3">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="profile d-flex w-100 justify-content-center">
+                            <img src="img/depoimentos/yara-nunes.png" style="width: 80px; height: 80px; border-radius: 50%; display: flex ; align-items: center; justify-content: center;">
+                        </div>
+                        <p class="text-right mt-3"><strong>Yara Nunes de Carvalho</strong><br/>
+                            <span class="text-muted">Advogada</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 text-center">
+            <button type="button" style="padding: 10px 30px; max-width: 360px; margin: 0 auto;" onclick="openModal();" class="btn btn-primary">Cadastrar agora</button>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div class="modal" id="registerModal" wire:ignore.self>
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <h2 style="font-size: 1.3rem; font-weight: 600; color: #1f2937; margin-bottom: 10px;">Cadastre-se gratuitamente</h2>
+            <form wire:submit.prevent="register">
+                <div>
+                    <div class="form-group mb-2 text-start">
+                        <label for="name" class="input-label">Nome</label>
+                        <input type="text" class="form-control" id="name" wire:model="name" placeholder="Digite seu nome completo" required>
+                                            </div>
+                    <div class="form-group mb-2 text-start">
+                        <label for="email" class="input-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" wire:model="email" placeholder="Digite seu e-mail" required>
+                                            </div>
+                    <div class="form-group mb-2 text-start">
+                        <label for="password" class="input-label">Senha</label>
+                        <input type="password" class="form-control" id="password" wire:model="password" placeholder="Digite sua senha" required>
+                                            </div>
+                    <div class="form-group mb-2 text-start">
+                        <label for="password_confirmation" class="input-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="password_confirmation" wire:model="password_confirmation" placeholder="Confirme sua senha" required>
+                                            </div>
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg" name="button-submit">Cadastrar agora</button>
+                    </div>
+                    <div class="alert alert-success" style="margin-top: 10px; font-size: 0.8rem;">
+                        <i class="bi bi-coin me-2" style="font-size: 20px;"></i><b>Você ganha 85 créditos na sua primeira compra!</b>
+                    </div>
+                    <hr class="mt-3">
+                    <div class="mt-3">
+                        Já tem uma conta?
+                        <a href="login.html">Fazer Login</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <style>
+    #footer{
+        background-color: #000000!important;
+        padding-top: 10px;
+        color: rgb(209, 209, 209);
+    }
+        
+            .footer-divider {
+                border-color: #d1d5db;
+                margin: 10px 0;
+            }
+        
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                padding-top: 5px;
+            }
+        
+            .social-link {
+                color: #c8c8c8;
+                font-size: 25px;
+                transition: color 0.3s ease, transform 0.2s;
+            }
+        
+            .social-link:hover {
+                color: #008080; /* Cor em destaque no hover */
+                transform: scale(1.1);
+            }
+        
+            .footer-link {
+                color: #b7b7b7;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        
+            .footer-link:hover {
+                text-decoration: underline;
+            }
+        
+            .footer-text {
+                color: #b7b7b7;
+                font-size: 0.875rem;
+                margin: 0;
+            }
+        
+            .footer-text p {
+                margin: 0;
+            }
+</style>
+<footer id="footer" class="text-center text-lg-start">                          
+    <section style="padding-bottom: 10px;">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto text-center">
+                    <a href="index.html">
+                        <img src="images/logo-fundo-escuro.png" loading="lazy" height="50" alt="Adv Dinâmico">
+                    </a>
+                    <br>
+                    <a href="aplicativo-para-advogados.html">
+                        <img src="../correspondentedinamico.com.br/img/app-correspondente-juridico.png" alt="Baixar Aplicativo Correspondente Dinâmico" style=" width: 100%; max-width: 300px; ">
+                    </a>
+                    <hr style="margin:0px">
+                    <img width="300" src="https://correspondentedinamico.com.br/img/ab2l.webp" alt="Selo AB2L">
+                </div>
+                <div class="col-md-3 mx-auto mb-3">
+                    <p class="fw-bold text-center" style=" font-size: 18px; font-weight: bold;">
+                        Para Cidadãos
+                    </p>
+                    <div class="text-center">
+                        <p><a href="https://api.whatsapp.com/send?phone=5511995218941&amp;text=Ol%C3%A1,%20Preciso%20de%20um%20Advogado" target="_blank" class="text-reset" style="text-decoration: none;">Enviar Meu Caso</a></p>
+                        <p><a href="https://api.whatsapp.com/send?phone=5511995218941&amp;text=Ol%C3%A1,%20Preciso%20de%20um%20Advogado" target="_blank" class="text-reset" style="text-decoration: none;">Enviar Minha Dúvida</a></p>
+                        <p><a href="consultar-processo.html" class="text-reset" style="text-decoration: none;">Consultar Processos</a></p>
+                        <p><a href="consultar-empresa.html" class="text-reset" style="text-decoration: none;">Consultar Empresa</a></p>
+                        <p><a href="artigos.html" class="text-reset" style="text-decoration: none;">Artigos Jurídicos</a></p>
+                        <p><a href="advogados.html" class="text-reset" style="text-decoration: none;">Advogados</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto mb-3">
+                    <p class=" fw-bold text-center" style=" font-size: 18px; font-weight: bold;">
+                        Para Advogados
+                    </p>
+                    <div class="text-center">
+                        <p><a href="cadastro-advogado.html" class="text-reset" style="text-decoration: none;">Cadastre-se como Advogado</a></p>
+                        <p><a href="login.html" class="text-reset" style="text-decoration: none;">Entrar como Advogado</a></p>
+                        <p><a href="login.html" class="text-reset" style="text-decoration: none;">Casos Jurídicos</a></p>
+                        <p><a href="login.html" class="text-reset" style="text-decoration: none;">Publicar Artigos - IA</a></p>
+                        <p><a  target="_blank" href="https://advdinamico.zendesk.com/hc/pt-br" class="text-reset" style="text-decoration: none;">Fale Conosco</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto mb-3">
+                    <p class=" fw-bold text-center" style=" font-size: 18px; font-weight: bold;">Descubra Mais</p>
+                    <div class="text-center">
+                        <p><a href="https://correspondentedinamico.com.br/" target="_blank" class="text-reset" style="text-decoration: none;">Correspondentes Jurídicos</a></p>
+                        <p><a href="https://centraldodireito.com.br/" target="_blank" class="text-reset" style="text-decoration: none;">Portal de Notícias Jurídicas</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center">
+            <div class="container">
+                <hr class="footer-divider">
+                <div class="social-icons mb-2">
+                    <a target="_blank" href="https://www.instagram.com/advdinamico/" aria-label="Instagram Adv Dinâmico" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/people/Adv-Dinâmico/61568842657866/" aria-label="Facebook Adv Dinâmico" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <a target="_blank" href="https://painel.correspondentedinamico.com.br/files/politica-privacidade-adv-dinamico.html" class="footer-link">Política de Privacidade</a>
+                <p class="footer-text mt-2">
+                    CNPJ 54.246.453/0001-21 <br>
+                    ADALI TECNOLOGIA DA INFORMACAO LTDA
+                </p>
+                <div class="partner-logo text-cente p-3">
+                    <div class="d-inline-block" style="background: #282a86; padding: 12px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+                        <a href="https://grupoadali.com.br/" target="_blank">
+                            <img src="../grupoadali.com.br/logo2.png" alt="Grupo Adali" style="max-width: 120px;">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center footer-text" style="padding-bottom: 20px;">
+                    © 2015 - 2026 Correspondente Dinâmico - Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+</footer>
+    </div>
+
+    <script>
+    function openModal() {
+        document.getElementById('registerModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        document.getElementById('registerModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    // Fecha modal ao apertar ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+</script>
+
+<script>
+    let observer = new IntersectionObserver(handleIntersection);
+
+    let target = document.getElementById('clients-number');
+    observer.observe(target);
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount('clients-number', 50000);
+                observer.disconnect();
+            }
+        });
+    }
+
+    function animateCount(elementId, endCount)
+    {
+        let countElement = document.getElementById(elementId);
+        let startCount = parseInt(countElement.textContent);
+        let duration = 1300;
+
+        let step = (endCount - startCount) / (duration / 10); // Calcula o incremento a cada 10ms
+
+        function updateCount() {
+            if (startCount < endCount) {
+                startCount += step;
+                countElement.textContent = formatNumber(Math.round(startCount));
+                setTimeout(updateCount, 10); // Atualiza o número a cada 10ms
+            } else {
+                countElement.textContent = formatNumber(endCount); // Garante que o número final seja exato
+            }
+        }
+
+        updateCount();
+    }
+
+    function formatNumber(number) {
+        return number.toLocaleString('pt-BR', {
+            style: 'decimal',
+            maximumFractionDigits: 0
+        });
+    }
+</script>
+    <script defer src="../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        document.addEventListener('livewire:initialized', () => {
+            Livewire.on('fbq-track', ({ event_name, params, eventID }) => {
+                fbq('track', event_name, params || {}, eventID ? { eventID } : {});
+            });
+
+            Livewire.on('notify', ({ message, type }) => {
+                switch(type) {
+                    case 'info':
+                        iziToast.info({
+                            message: message,
+                        });
+                        break;
+                    case 'warning':
+                        iziToast.warning({
+                            message: message,
+                        });
+                        break;
+                    case 'error':
+                        iziToast.error({
+                            message: message,
+                        });
+                        break;
+                    case 'success':
+                        iziToast.success({
+                            message: message,
+                        });
+                        break;
+                    default:
+                        console.error("Tipo de notificação desconhecido:", type);
+                }
+            });
+
+        });
+    </script>
+    <script>
+        function phoneNumber(input) {
+            if(input.replace(/\D/g,'').length <= 10) {
+                return '(99) 9999-9999';
+            }
+
+            return '(99) 99999-9999';
+        }
+    </script>
+    
+<script src="livewire/livewire.min71b4.js?id=61e33937"   data-csrf="20Ir5lrL2czWBjNWKuWHc56COmSUN7vnJHec5Gin" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"c4d36dc2fd4f4c57a2081a0e6de00151","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from advdinamico.com.br/cadastro-advogado by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2026 14:37:56 GMT -->
+</html>
